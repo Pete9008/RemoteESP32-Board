@@ -32,7 +32,7 @@ If the SD card is not used do not populate R9 (D2 pullup).
 If the SD card is required then the module must have the flash voltage selection eFuses burned BEFORE resistor R9 is fitted.  See https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/peripherals/sd_pullup_requirements.html for details of the fuse burning process.
 
 # Programming Interface
-Header J3 provides a programming interface for the board.  An external USB to TTL 232 converter dongle is required to connect to this header.  To place the ESP32 into programming mode pins 1 and 2 of the header must be linked.  Pin-6 on the header can then either be grounded manually to reset the ESP32 and enter programming mode or can connected to RTS on the dongle (a reset will then be generated automatically by the esptool programming software).  The Tx line on the dongle connects to header Pin-4 and the Rx line to header Pin-5.  Header Pin-1 should connect to dongle 0V/GND.
+Header J3 provides a programming interface for the board.  An external USB to 3V3 TTL 232 converter dongle is required to connect to this header.  To place the ESP32 into programming mode pins 1 and 2 of the header must be linked.  Pin-6 on the header can then either be grounded manually to reset the ESP32 and enter programming mode or can connected to RTS on the dongle (a reset will then be generated automatically by the esptool programming software).  The Tx line on the dongle connects to header Pin-4 and the Rx line to header Pin-5.  Header Pin-1 should connect to dongle 0V/GND.
 
 Power during programming must be supplied by connecting 12V on the power header J4.
 
