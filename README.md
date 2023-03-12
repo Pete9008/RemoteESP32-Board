@@ -36,6 +36,13 @@ Header J3 provides a programming interface for the board.  An external USB to TT
 
 Power during programming must be supplied by connecting 12V on the power header J4.
 
+# Enclosure
+Two versions of a 3D printable enclosure are included:
+RemoteESP32_Enclosure_NoBat.FCStd - Slim enclosure but without enough space for the RTC backup battery.
+RemoteESP32_Enclosure_Bat.FCStd - Larger enclosure with space for the RTC battery.
+
+Both are in FreeCAD format.  .stl files for the enclosure base and lid are also included.
+
 
 
 
